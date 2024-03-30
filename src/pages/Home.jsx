@@ -33,20 +33,7 @@ const Home = () => {
       {/* <div className="container-cards p-14 flex space-x-10 justify-center"> */}
       <div className="container mx-auto flex justify-center items-center">
       <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-[4rem]">
-        {/* {cardsData.map((card) => (
-          <Card
-            todoNum={card.id}
-            key={card.id}
-            cardName={card.cardname}
-            classAdd={
-              selectedCard === card.id
-                ? 'scale-[1.2] z-10 transition-transform duration-300'
-                : 'transition-transform duration-300'
-            }
-            action={() => handleCardClick(card.id)}
-          />
-         
-        ))} */}
+     
          <Card1 key={cardsData[0].id} cardName={cardsData[0].cardname} classAdd={
               selectedCard === cardsData[0].id
                 ? 'scale-[1.2] z-10 transition-transform duration-300'
