@@ -13,7 +13,7 @@
 
 1. **Clone the repository**
 ```
-git clone https://github.com/Thanisha23/AnyDo-responsive.git
+git clone https://github.com/Thanisha23/Todo-QuadB.git
 ```
 
 2. **Navigate to the project directory and install dependencies for the project**
