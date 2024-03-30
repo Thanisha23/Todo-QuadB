@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash,faPenToSquare} from "@fortawesome/free-solid-svg-icons";
-import { useDispatch} from "react-redux";
-import { removeCard3Todo,updateCard3Todo } from "../features/card3/card3Slice";
-import {useState} from "react"
-const Todos3 = ({todo}) => {
+import { faTrash, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
+import { removeCard3Todo, updateCard3Todo } from "../features/card3/card3Slice";
+import { useState } from "react";
+const Todos3 = ({ todo }) => {
   const [input, setInput] = useState(todo.text);
   const [isEditable, setIsEditable] = useState(false);
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Todos3 = ({todo}) => {
     }
   };
   return (
-<div
+    <div
       key={todo.id}
       className="task h-3 mb-2 pt-5 pb-5 pl-3 pr-3 items-center flex justify-between cursor-pointer bg-white rounded-3xl"
     >

@@ -1,33 +1,32 @@
 import { useState } from "react";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addCard3Todo } from "../features/card3/card3Slice";
 import Todos3 from "./Todos3";
-
 
 // eslint-disable-next-line react/display-name, react/prop-types
 const Card3 = ({ action, cardName, classAdd }) => {
   const todos = useSelector((state) => state.card3.todos);
 
- // State for storing the input value
- const [input, setInput] = useState("");
+  // State for storing the input value
+  const [input, setInput] = useState("");
 
- // Accessing the Redux dispatch function
- const dispatch = useDispatch();
+  // Accessing the Redux dispatch function
+  const dispatch = useDispatch();
 
- //function for adding a new todo
- const addTodoHandler = (e) => {
-  // Preventing the default form submission
-  e.preventDefault();
+  //function for adding a new todo
+  const addTodoHandler = (e) => {
+    // Preventing the default form submission
+    e.preventDefault();
 
-  // Dispatching the addCard2Todo action with the input value
-  dispatch(addCard3Todo(input));
+    // Dispatching the addCard2Todo action with the input value
+    dispatch(addCard3Todo(input));
 
-  // Clearing the input field
-  setInput("");
-};
+    // Clearing the input field
+    setInput("");
+  };
 
-return (
-  <div
+  return (
+    <div
       onClick={action}
       className={`${classAdd} card bg-purple-300 h-[22rem] md:h-97 w-[19rem] md:w-96 rounded-3xl text-center font-crisis pt-[0.5rem]`}
     >

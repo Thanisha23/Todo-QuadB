@@ -24,19 +24,18 @@ export const card2Slice = createSlice({
       localStorage.setItem("card2Todos", card2todos);
     },
     updateCard2Todo: (state, action) => {
-        const { id, text } = action.payload;
-        const todoIndex = state.todos.findIndex((todo) => todo.id === id);
-        if (todoIndex !== -1) {
-          state.todos[todoIndex].text = text;
-          let card2todos = JSON.stringify(current(state).todos);
-          localStorage.setItem("card2Todos", card2todos);
-        }
-      },
-
-
+      const { id, text } = action.payload;
+      const todoIndex = state.todos.findIndex((todo) => todo.id === id);
+      if (todoIndex !== -1) {
+        state.todos[todoIndex].text = text;
+        let card2todos = JSON.stringify(current(state).todos);
+        localStorage.setItem("card2Todos", card2todos);
+      }
+    },
   },
 });
 
-export const { addCard2Todo, removeCard2Todo,updateCard2Todo } = card2Slice.actions;
+export const { addCard2Todo, removeCard2Todo, updateCard2Todo } =
+  card2Slice.actions;
 
 export default card2Slice.reducer;
