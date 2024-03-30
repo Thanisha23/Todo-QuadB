@@ -27,7 +27,7 @@ const Card3 = ({ action, cardName, classAdd }) => {
 return (
   <div
     onClick={action}
-    className={`${classAdd} bg-purple-300 h-[22rem] md:h-97 w-[19rem] md:w-96 rounded-3xl text-center font-crisis pt-[0.5rem]`}
+    className={`${classAdd} card bg-purple-300 h-[22rem] md:h-97 w-[19rem] md:w-96 rounded-3xl text-center font-crisis pt-[0.5rem]`}
   >
   
     <div>
