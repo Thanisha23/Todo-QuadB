@@ -34,7 +34,7 @@ const Card2 = ({ action, cardName, classAdd }) => {
       </div>
 
       {/* Container for input field and add button */}
-      <div className="relative items-center flex flex-wrap p-5 md:p-7 pt-2 md:pt-1">
+      <div className="relative items-center flex flex-wrap gap-1 p-5 md:p-7 pt-2 md:pt-1">
         {/* Taking input from user */}
         <input
           value={input}
@@ -45,9 +45,9 @@ const Card2 = ({ action, cardName, classAdd }) => {
         />
 
         {/* Add todo button */}
-        <div className="cursor-pointer">
+        <div className="cursor-pointer pt-2">
           <span
-            className="material-symbols-outlined md:text-4xl"
+            className="material-symbols-outlined text-4xl"
             onClick={addTodoHandler}
           >
             add_circle

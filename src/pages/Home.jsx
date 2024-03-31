@@ -51,6 +51,9 @@ const Home = () => {
             } action={() => handleCardClick(cardsData[2].id)} />
       </div>
       </div>
+      <div className="flex justify-center items-center font-crisis text-xl my-2 font-medium">
+        Built by Thanisha 🫶🏻
+      </div>
     </div>
   );
 };
